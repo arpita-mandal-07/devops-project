@@ -1,0 +1,24 @@
+# Ignore Terraform working directory and state
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore sensitive variable files
+terraform.tfvars
+*.tfvars
+
+# Optional: lock file (include if you want exact provider versions)
+.terraform.lock.hcl
+
+# Ignore embedded React app (handled in its own repo)
+project-folder/
+
+# Logs, OS, and IDE/editor files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Terraform variable files
+*.tfvars
