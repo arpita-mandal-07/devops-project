@@ -53,7 +53,6 @@ jobs:
           export TF_VAR_bucket_name="atft-bukt-${UNIQUE_ID}"
           terraform apply -auto-approve -input=false 
 
-
   docker-security:
     name: Docker Build & Trivy Scan
     runs-on: ubuntu-latest
