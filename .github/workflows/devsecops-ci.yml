@@ -49,8 +49,8 @@ jobs:
         run: |
           cd terraform
           export UNIQUE_ID="${{ github.run_id }}"
-          export TF_VAR_project_name="devscops-${UNIQUE_ID}"
-          export TF_VAR_bucket_name="atft-bkt-${UNIQUE_ID}"
+          export TF_VAR_project_name="devsops-${UNIQUE_ID}"
+          export TF_VAR_bucket_name="atft-bukt-${UNIQUE_ID}"
           terraform apply -auto-approve -input=false 
 
   docker-security:
